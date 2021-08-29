@@ -1,0 +1,22 @@
+.pad-container{
+    padding: 60px;
+    /* margin: 10px; */
+    font-size: 15px;
+    text-align: center;
+    font: white 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 1px solid #5f3e4c;
+    background:#e2d8d5;
+    border-radius: 50%;
+ 
+}
+.pad-container:hover {
+    cursor: pointer;
+}
+#pad-container-onClicked{
+    border: 3px solid #5f3e4c;
+    background:#be9fb7;
+}
+
+.pad-container label{
+    text-align: center;
+}

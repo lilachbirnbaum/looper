@@ -1,0 +1,14 @@
+.footer {
+    
+    position: relative;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    height: min-content;
+    
+}
+
+.footer p {
+    color: black;
+}
+
