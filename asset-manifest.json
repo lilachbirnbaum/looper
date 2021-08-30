@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/looper/static/css/main.67a783f6.chunk.css",
+    "main.css": "/looper/static/css/main.b2cc7cf2.chunk.css",
     "main.js": "/looper/static/js/main.d5b47088.chunk.js",
     "main.js.map": "/looper/static/js/main.d5b47088.chunk.js.map",
     "runtime-main.js": "/looper/static/js/runtime-main.f813f649.js",
@@ -10,7 +10,7 @@
     "static/js/3.9e5e2022.chunk.js": "/looper/static/js/3.9e5e2022.chunk.js",
     "static/js/3.9e5e2022.chunk.js.map": "/looper/static/js/3.9e5e2022.chunk.js.map",
     "index.html": "/looper/index.html",
-    "static/css/main.67a783f6.chunk.css.map": "/looper/static/css/main.67a783f6.chunk.css.map",
+    "static/css/main.b2cc7cf2.chunk.css.map": "/looper/static/css/main.b2cc7cf2.chunk.css.map",
     "static/js/2.e081d621.chunk.js.LICENSE.txt": "/looper/static/js/2.e081d621.chunk.js.LICENSE.txt",
     "static/media/120_future_funk_beats_25.mp3": "/looper/static/media/120_future_funk_beats_25.5eb417fc.mp3",
     "static/media/120_stutter_breakbeats_16.mp3": "/looper/static/media/120_stutter_breakbeats_16.37c82282.mp3",
@@ -26,7 +26,7 @@
   "entrypoints": [
     "static/js/runtime-main.f813f649.js",
     "static/js/2.e081d621.chunk.js",
-    "static/css/main.67a783f6.chunk.css",
+    "static/css/main.b2cc7cf2.chunk.css",
     "static/js/main.d5b47088.chunk.js"
   ]
 }
