@@ -7,21 +7,18 @@ const Pad = (props) => {
 
   const [audioUrl, setAudioUrl] = useState();
   const [num,setNum] = useState(0);
-  const [color,setColor] = useState('');
+  const [style,setStyle] = useState('');
   const setTheSound = () => {
     
     
     props.padClickedHandler(props);
     setNum(num +1);
     if(num%2){
-      setColor("s");
+      setStyle("s");
     }else{
-      setColor("pad-container-onClicked");
+      setStyle("pad-container-onClicked");
     }
 
-   }
-   const onAudioEnded = () =>{
-    props.audioEndedHandler(props);
    }
   
     useEffect(
@@ -31,7 +28,7 @@ const Pad = (props) => {
     )
     
       return(
-        <div className="pad-container" id={color} onClick={setTheSound} >
+        <div className="pad-container" id={style} onClick={setTheSound} >
          <label>{props.name}</label>
          <audio id={props.name} loop>
             {audioUrl && <source src={require("../Audio/" + audioUrl).default} type="audio/mpeg" preload="auto" ></source>}

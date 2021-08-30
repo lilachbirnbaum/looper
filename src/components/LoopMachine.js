@@ -1,4 +1,4 @@
-import React, {useContext, useEffect, useState} from "react";
+import React, {useEffect, useState} from "react";
 import Pad from './Pad';
 import Timer from './Timer';
 import './Pad.css';
@@ -7,12 +7,20 @@ import './LoopMachine.css';
 const OFF = false;
 const ON = true;
 const TIMER = "Timer.mp3";
-let audio_mode_dummy = [OFF,OFF,OFF,OFF,OFF,OFF,OFF,OFF,OFF];
+
 const LoopMachine = (props) => {
   
-    const [audioModes, setAudioMode] = useState(audio_mode_dummy);
+
+    const [audioModes, setAudioMode] = useState([]);
     const [loopState,setLoopMachineState] = useState(OFF);
-    //const [loopState,setLoopMachineState] = useState(OFF);
+    
+    const createArray = () =>{
+        var arr = [];
+        for(var i=0; i<props.audioList.length; i++) {
+            arr.push(OFF);
+        return arr;
+}
+    }
 
     const onHandler = () =>{
         var foundOneOn = false;
@@ -73,20 +81,21 @@ const LoopMachine = (props) => {
 
     }
     const audioEndedHandler = (item) => {
-        var foundOneOn = false;
-        //audioModes.map(item => foundOneOn = foundOneOn || item);
         var timer = document.getElementById("Timer");
         if(loopState == ON){
-            
             timer.play();
             repeatAudio();
         }
         
 
     }
-  
+    useEffect(
+        () => {
+            setAudioMode(createArray());
+        },[]
+    )
 
-     
+
     return(
     <div className="App">
         <Timer timer={TIMER} id={"Timer"} audioEndedHandler={audioEndedHandler}></Timer>
